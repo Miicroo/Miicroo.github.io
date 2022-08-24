@@ -1,0 +1,62 @@
+# Site
+name: "Miicroo"
+title: "Miicroo's blog"
+description: "Improving the connected, automated home! 🤖"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: 
+google_analytics:
+disqus:
+mailchimp-list:
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  miicroo:
+    name: Miicroo
+    display_name: Miicroo
+    gravatar: 5f12d17c2acc2b715989c858007b7c75
+    email: test@example.com
+    web: https://Miicroo.github.io
+    twitter: https://twitter.com/m_i_c_r_o_
+    description: "Java, Python, Javascript, Go. Passion for bringing digital life in analog things."
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client:
+adsense-data-ad-slot:
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
