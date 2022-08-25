@@ -1,10 +1,4 @@
----
-layout: default
-title: Home
----
-
-{% if page.url == "/" %}
-
+I"ä
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
@@ -13,20 +7,14 @@ title: Home
     </div>
     <div class="row">
 
-    {% for post in site.posts %}
+    
 
-        {% if post.featured == true %}
+        
 
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
+    
 
     </div>
 </section>
-
-{% endif %}
 
 <!-- Posts Index
 ================================================== -->
@@ -40,11 +28,7 @@ title: Home
 
     <div class="row listrecent">
 
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
+        
 
     </div>
 
@@ -55,7 +39,8 @@ title: Home
 <div class="bottompagination">
 <div class="pointerup"><i class="fa fa-caret-up"></i></div>
 <span class="navigation" role="navigation">
-    {% include pagination.html %}
+    
 </span>
 </div>
 
+:ET
