@@ -47,7 +47,7 @@ The [webhook api](https://www.home-assistant.io/docs/automation/trigger/#webhook
     platform: webhook
     webhook_id: coffee
   action:
-    service: input_number.set_value
+    service: input_number.increment
     data_template:
       entity_id: input_number.coffee_counter
       value: "{{ 1 + (states.input_number.coffee_counter.state | int) }}"
